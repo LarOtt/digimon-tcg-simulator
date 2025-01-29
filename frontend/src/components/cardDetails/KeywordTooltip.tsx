@@ -89,21 +89,26 @@ function getExplanation(keyword: string) {
         case "Barrier":
             return "When this Digimon would be deleted in battle, by trashing the top card of your security stack, prevent that deletion.";
         case "Blast":
-            return "Your Digimon may digivolve into a Digimon in your hand with this keyword without paying the cost.";
+            else "Your Digimon may digivolve into this card without paying the cost";
         case "Mind":
             return "Place this Tamer under 1 of your Digimon without a Tamer in its digivolution cards.";
         case "Fortitude":
-            return "When this Digimon is deleted, if it had any Digivolution cards, it can be played again for no cost.";
+            return "When this Digimon with Digivolution cards is deleted, play this card without paying the cost.";
         case "Partition":
             return "When this Digimon that has 1 of each specified cards in its digivolution cards would leave the battle area other than by your own effects or by battle, you may play 1 of each card without paying their costs.";
         case "Overclock":
-            return "At the end of your turn, by deleting 1 of your tokens or 1 of your other Digimon with the [X] trait, this Digimon may attack a player without suspending."
+            return "At the end of your turn, by deleting 1 of your tokens or 1 of your other [X] trait Digimon, this Digimon attacks a player without suspending.";
         case "Vortex":
-            return "At the end of your turn on which this Digimon was played, it may attack an opponent's Digimon."
+            return "At the end of your turn, this Digimon may attack an opponent's Digimon. With this effect it can attack the turn it was played.";
         case "Ice":
-            return "This Digimon compares its number of digivolution cards instead of DP in battles other than with security Digimon.";
+            return "Other than against Security Digimon, compare the number of digivolution cards instead of DP in this Digimon's battles.";
         case "Collision":
-            return "When this Digimon declares an attack, all of your opponent's Digimon gain ＜Blocker＞, and must block if possible.";
+             return "During this Digimon's attack, all of your opponent's Digimon gain ＜Blocker＞, and the opponent blocks if possible.";
+        case "Scapegoat":
+            return "When this Digimon would be deleted other than by your effects, by deleting 1 of your other Digimon, prevent that deletion";
+        case "Execute":
+            return "At the end of the turn, this Digimon may attack. At the end of that attack, delete this Digimon. Your opponent's unsuspended Digimon can also be attacked with this effect.";
+    
             default:
             return "";
     }
