@@ -108,6 +108,8 @@ function getExplanation(keyword: string) {
             return "When this Digimon would be deleted other than by your effects, by deleting 1 of your other Digimon, prevent that deletion";
         case "Execute":
             return "At the end of the turn, this Digimon may attack. At the end of that attack, delete this Digimon. Your opponent's unsuspended Digimon can also be attacked with this effect.";
+        case "Fragment":
+            return "When this Digimon would be deleted, by trashing any X of its digivolution cards, it isn’t deleted.";
     
             default:
             return "";
