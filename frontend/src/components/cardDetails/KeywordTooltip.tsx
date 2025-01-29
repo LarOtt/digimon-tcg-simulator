@@ -89,7 +89,7 @@ function getExplanation(keyword: string) {
         case "Barrier":
             return "When this Digimon would be deleted in battle, by trashing the top card of your security stack, prevent that deletion.";
         case "Blast":
-            else "Your Digimon may digivolve into this card without paying the cost";
+            return "Your Digimon may digivolve into this card without paying the cost";
         case "Mind":
             return "Place this Tamer under 1 of your Digimon without a Tamer in its digivolution cards.";
         case "Fortitude":
